@@ -21,6 +21,7 @@ app.UseStaticFiles();
 app.UseCors("AllowAll");
 app.MapControllers();
 
+app.MapGet("/", () => Results.Redirect("/home"));
 app.MapFallbackToFile("/home", "index.html");
 
 app.Run();
