@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznam uporabnikov</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body>
+
+    <h1>Seznam uporabnikov</h1>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Ime</th>
+                <th>Starost</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <h2>Dodaj uporabnika</h2>
+
+    <form id="userForm">
+        <input type="text" id="ime" placeholder="Ime" required>
+        <input type="number" id="starost" placeholder="Starost" required>
+        <div>
+            <button type="submit" id="localButton">Lokalno</button>
+            <button type="submit" id="serverButton">Na strežnik</button>
+        </div>
+    </form>
+
+</body>
+</html>
